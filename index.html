@@ -3,9 +3,71 @@
 <head>
     <title>My Portfolio</title>
     <style>
-        body{
-            background: linear-gradient(45deg,black,white,red,blue,white,black);
+        body {
+            background: linear-gradient(45deg, black, white, red, blue, white, black);
             background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        .welcome-section {
+            height: 100vh;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .welcome-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .welcome-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background: #00c9ff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #92fe9d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -14,16 +76,25 @@
         <h1 style="color: darkblue;">Michael's Portfolio</h1>
         <p>I am a Web Developer | Designer | Learner</p>
     </header>
-    
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <h1>Hi, I'm Michael 👋</h1>
+            <p>A young web developer who loves building cool things!</p>
+            <a href="portfolio.html" class="cta-button">See My Work</a>
+        </div>
+    </section>
+
     <nav>
         <ul>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
-           
         </ul>
-    </nav><hr/>
-     
+    </nav>
+    <hr/>
+
     <footer>
         <p>&copy; 2025 Michael. All rights reserved.</p>
     </footer>
