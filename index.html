@@ -96,9 +96,8 @@
 </head>
 <body>
     <header>
-        <audio id="bg-music" src="Trippie-Redd-Blast-Off-feat-Juice-WRLD--Internet-Money.mp3" loop></audio>
-<button onclick="toggleMusic()" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">🔊 Toggle Music</button>
-
+        <audio id="bg-music" src="trippie-blastoff.mp3" loop></audio>
+        <button onclick="toggleMusic()" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">🔊 Toggle Music</button>
         <h1 style="color: darkblue;">Michael's Portfolio</h1>
         <p>I am a Web Developer | Designer | Learner</p>
     </header>
@@ -132,18 +131,21 @@
     </footer>
 </body>
 <script>
-    let musicPlaying = false;
-    const bgMusic = document.getElementById("bg-music");
-  
-    function toggleMusic() {
-      if (musicPlaying) {
-        bgMusic.pause();
-      } else {
-        bgMusic.play();
-      }
-      musicPlaying = !musicPlaying;
+   <!-- Music Player -->
+
+  let musicPlaying = false;
+  const bgMusic = document.getElementById("bg-music");
+
+  function toggleMusic() {
+    if (musicPlaying) {
+      bgMusic.pause();
+    } else {
+      bgMusic.play();
     }
-  </script>
+    musicPlaying = !musicPlaying;
+  }
+</script>
+
   
 <script>
     const text = "A young web developer who loves building cool things!";
